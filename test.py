@@ -7,7 +7,7 @@ class Google_search(unittest.TestCase):
     """ Тестирование поиска на сайте google.com"""
 
     def setUp(self):
-        self.driver = webdriver.Chrome('/Applications/chromedriver')
+        self.driver = webdriver.Chrome()
         self.driver.get("https://www.google.com")
 
     def test_google_search(self):
